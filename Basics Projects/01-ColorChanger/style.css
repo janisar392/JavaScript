@@ -1,0 +1,103 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body styles */
+  body {
+    background-color: #6b6a6a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Navbar styling */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    text-align:left;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Canvas styling */
+  .canvas {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  /* Button styles */
+  .button {
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Button specific colors */
+  #green {
+    background-color: green;
+  }
+  
+  #white {
+    background-color: white;
+    color: black; /* Text color for visibility on white background */
+    border: 2px solid #ccc; /* Added border for visibility */
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #yellow {
+    background-color: yellow;
+    color: black;
+  }
+  
+  /* Hover effect for buttons */
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .button {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
